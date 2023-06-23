@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.back {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("img/backimg1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.bird {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 40vh;
+    left: 25vw;
+    z-index: 100;
+}
+
+.pipe_sprite {
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background: radial-gradient(lightgreen 50%, green);
+    border: 5px solid black;        
+}
+
+.score {
+    position: fixed;
+    font-size: 2rem;
+    padding: 2vh 0 0 2vw;
+    z-index: 20;
+    top: 1vh;
+    left: 1vw;
+    color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.score_val {
+	color: gold;
+	font-weight: bold;
+}
+
+.message {
+    position: fixed;
+    font-size: 3rem;
+    top: 12vh;
+    left: 30vw;
+    z-index: 200;
+    text-align: center;
+}
+
+.message_style {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
